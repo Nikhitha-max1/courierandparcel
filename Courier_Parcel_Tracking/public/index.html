@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CourierFlow | Dashboard</title><link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">C</span><span>Courier<span class="brand-light">Flow</span></span></a>
+    <p class="nav-label">MAIN MENU</p>
+    <nav>
+      <a class="nav-link active" href="index.html">▦ <span>Dashboard</span></a>
+      <a class="nav-link" href="customers.html">♙ <span>Customers</span></a>
+      <a class="nav-link" href="book-parcel.html">＋ <span>Book a Parcel</span></a>
+      <a class="nav-link" href="parcels.html">▤ <span>All Parcels</span></a>
+      <a class="nav-link" href="tracking.html">⌖ <span>Track Parcel</span></a>
+      <a class="nav-link" href="payments.html">₹ <span>Payments</span></a>
+    </nav>
+    <div class="sidebar-bottom"><div class="avatar">A</div><div><strong>Administrator</strong><small>System Manager</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><p class="eyebrow">OVERVIEW</p><h1>Dashboard</h1></div><span class="date-label" id="todayDate"></span></header>
+    <section class="welcome"><div><p class="eyebrow light">COURIER MANAGEMENT</p><h2>Welcome back, Admin</h2><p>Here's what's happening with your courier operations today.</p></div><div class="welcome-mark">✈</div></section>
+    <section class="stats-grid">
+      <article class="stat-card"><div class="stat-top"><span>Total Customers</span><span class="stat-icon blue">♙</span></div><strong id="customerCount">—</strong><small>Registered customers</small></article>
+      <article class="stat-card"><div class="stat-top"><span>Total Parcels</span><span class="stat-icon purple">▤</span></div><strong id="parcelCount">—</strong><small>All parcel bookings</small></article>
+      <article class="stat-card"><div class="stat-top"><span>Delivered</span><span class="stat-icon green">✓</span></div><strong id="deliveredCount">—</strong><small>Successfully delivered</small></article>
+      <article class="stat-card"><div class="stat-top"><span>In Progress</span><span class="stat-icon orange">◷</span></div><strong id="pendingCount">—</strong><small>Pending or in transit</small></article>
+    </section>
+    <section class="content-card quick-card"><div class="section-heading"><div><p class="eyebrow">SHORTCUTS</p><h2>Quick actions</h2></div></div><div class="quick-grid">
+      <a href="book-parcel.html" class="quick-action"><span class="quick-icon blue">＋</span><div><strong>Book a parcel</strong><small>Create a new shipment</small></div><b>→</b></a>
+      <a href="customers.html" class="quick-action"><span class="quick-icon purple">♙</span><div><strong>Add customer</strong><small>Manage customer details</small></div><b>→</b></a>
+      <a href="tracking.html" class="quick-action"><span class="quick-icon green">⌖</span><div><strong>Track shipment</strong><small>Check parcel progress</small></div><b>→</b></a>
+    </div></section>
+    <p class="footer-note">CourierFlow · Courier and Parcel Tracking Management System</p>
+  </main>
+</div>
+</body></html>
